@@ -1,0 +1,34 @@
+1 - dot indicates any character/Number between two pecies of String Ex:  fooabar ,  fooxbar  Regex: "foo.bar"
+
+2 - * indicates zero or more occuerence between two pecies of String Ex:  foozbar ,  foobar  Regex: "foo.*bar"
+
+3- [fcl] practes with characters indicate specific characters in the place reside in String Ex: coo , loo and Not poo Regex: "[fcl]oo"
+
+4- [^fcl] ^ negation Symbol with characters skip characters in the place reside in String Ex: poo , foo and Not hoo Regex: "[^hm]oo"
+
+5- [j-m] range Symbol with characters  in the place reside in String Ex: joo , koo and Not zoo Regex: "[j-m]oo"
+
+6- [j-mz] range Symbol with characters j to m and include Z in the String Ex: zoo , joo and Not woo Regex: "[j-mz]oo"
+
+7- [j-mJ-Mz] range Symbol with characters j to m small or capital and include Z in the String Ex: zoo , joo and Not woo Regex: "[j-mJ-Mz]oo"
+
+8- x*\.y* indicates characters any number of x and any number of y and between them . sign \ to treat as anormal character in the String Ex: x.yy , xxx.yy and Not xxyy Regex: "x*\.y*"
+
+9- x*[#:.]y* indicates characters in square Brackets between x and y as literal in the String Ex: x#y , x:y and Not x&y Regex: "x*[#:.]y*"
+
+
+10- x*[\^#:.]y* indicates characters in square Brackets between x and y as literal and escape special character caret in the String Ex: x#y , x^y and Not x&y Regex: "x*[\^#:.]y*"
+
+11- x*[\\#\^]y* indicates characters in square Brackets between x and y as literal and escape special character caret and backSlash in the String Ex: x\y , x^y and Not x&y Regex: "x*[\\#\^]y*"
+
+12- ^foo caret symbol indicates any characters matching foo in the beginning of the String Ex: foo bar , foo baz and Not bar foo Regex: "^foo"
+
+13- bar$ $ symbol indicates any characters matching bar in the Ending of the String Ex: foo baz bar , baz foo bar and Not bar foo baz Regex: "bar$"
+
+14 - ^[0-9]{3}$ {} number in between parentices  indicates the number of occuerence in the String and ^ specify for the beginning of any 3 numbers and only 3 in String ex: 519 , 645 and Not 4874 Regex: ^[0-9]{3}$
+
+15 - ^[0-9]{4,6}$ {} range of number in between parentices  indicates the number of occuerence minimum and Maximum in the String any String length from 4 numbers to 6 in String ex: mouse , lion and Not fox Regex: ^[a-z]{4,6}$
+
+16 - (ha){4} () symbol indicates the string to specify followed by {} indicate min and max occuerence in String ex: hahahaha , hahahahaha and Not haha Regex: (ha){4} 
+
+17 - (log|ply)wood$ | symbol indicates or Condition between two strings  in String ex: logwood , plywood and Not teakwood Regex: (log|ply)wood$
