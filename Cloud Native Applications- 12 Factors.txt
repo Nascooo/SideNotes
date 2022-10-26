@@ -1,0 +1,9 @@
+12 Factors for make native Cloud App
+1- CodeBase
+	every microservice should have their own Repo
+2- Dependencies
+	every microservice should manage their dependecies through build tool to make it easy to manage dependecies
+3 - config
+	configuration should not be tied to microservice and should be dependent for every environment
+4- Backing service
+	microservice should swap between third party without any change to the application
